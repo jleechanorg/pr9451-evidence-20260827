@@ -1,0 +1,27 @@
+{
+  "run_id": "pr9451-backend-2449644",
+  "iteration": 1,
+  "timestamp_utc": "2026-08-28T02:12:00Z",
+  "checksum_mode": "bundle",
+  "provenance": {
+    "repository": "jleechanorg/worldarchitect.ai",
+    "pull_request": 9451,
+    "git_head": "2449644e46763c928e93ef1f85c790afcd03c201",
+    "branch": "fix/level-up-pcd-backend-main"
+  },
+  "claims": [
+    {
+      "claim": "Exact-head deterministic backend-first level-up suites pass",
+      "primary_artifact": "pr9451_backend_evidence.cast"
+    },
+    {
+      "claim": "The run is tied to the same clean git SHA before and after tests",
+      "primary_artifact": "pr9451_backend_evidence.cast"
+    }
+  ],
+  "limitations": [
+    "No native Gemini call",
+    "No real Firestore claim",
+    "No browser UI claim"
+  ]
+}
