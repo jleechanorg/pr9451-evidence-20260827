@@ -1,13 +1,18 @@
 {
-  "run_id": "pr9451-backend-2449644",
-  "iteration": 1,
-  "timestamp_utc": "2026-08-28T02:12:00Z",
+  "bundle_version": "1.1",
+  "bundle_timestamp": "2026-08-28T02:48:42Z",
+  "run_id": "pr9451-backend-4964052",
+  "iteration": 2,
+  "timestamp_utc": "2026-08-28T02:48:42Z",
   "checksum_mode": "bundle",
   "provenance": {
     "repository": "jleechanorg/worldarchitect.ai",
     "pull_request": 9451,
-    "git_head": "2449644e46763c928e93ef1f85c790afcd03c201",
-    "branch": "fix/level-up-pcd-backend-main"
+    "git_head": "49640522938f0a9c9edb97d95fd572bdee8184ef",
+    "branch": "fix/level-up-pcd-backend-main",
+    "merge_base": "16e229ced580b5eca6e50f39825bcb423b9787c1",
+    "commits_ahead_of_main": 29,
+    "diff_stat_vs_main": "119 files changed, 8242 insertions(+), 10521 deletions(-)"
   },
   "claims": [
     {
@@ -17,11 +22,22 @@
     {
       "claim": "The run is tied to the same clean git SHA before and after tests",
       "primary_artifact": "pr9451_backend_evidence.cast"
+    },
+    {
+      "claim": "The real local server reports the exact tested git SHA",
+      "primary_artifact": "pr9451_backend_evidence.cast"
     }
   ],
   "limitations": [
     "No native Gemini call",
     "No real Firestore claim",
     "No browser UI claim"
-  ]
+  ],
+  "recorded_run": {
+    "aggregate_result": "274 tests passed across six partitions; 11 subtests passed",
+    "exit_code": 0,
+    "pre_test_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
+    "post_test_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
+    "worktree_clean_after_run": true
+  }
 }

@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "source_table": "worldarchitecture-ai.llm_forensics.llm_payloads",
+  "filter": {
+    "event_type": "gameplay_streaming",
+    "request_ids": [
+      "2u8ehCZ1COsbAua3MZdo_3fcc4b0e7e7d4cd493c0b1849ac563c0",
+      "VYELIySaDwDUU2wub5gW_9aa83e3928754ee8a374d81c6a74bf93",
+      "otDtlfnF8VZAS5tx4MCW_1c50ff12a7334002ae540e4921d1858c",
+      "otDtlfnF8VZAS5tx4MCW_db4879e0493447ee9850715a001af396",
+      "otDtlfnF8VZAS5tx4MCW_55e381125fa540689712725ba2de534d"
+    ]
+  },
+  "rows": [
+    {
+      "campaign_id": "2u8ehCZ1COsbAua3MZdo",
+      "request_id": "2u8ehCZ1COsbAua3MZdo_3fcc4b0e7e7d4cd493c0b1849ac563c0",
+      "ingested_at": "2026-08-03T05:37:11Z",
+      "agent": "LevelUpAgent",
+      "provider": "gemini",
+      "model": "gemini-3-flash-preview",
+      "is_test": false,
+      "hashes": "available_in_source_context_but_not_transcribed"
+    },
+    {
+      "campaign_id": "VYELIySaDwDUU2wub5gW",
+      "request_id": "VYELIySaDwDUU2wub5gW_9aa83e3928754ee8a374d81c6a74bf93",
+      "ingested_at": "2026-08-27T18:41:09Z",
+      "agent": "DialogAgent",
+      "provider": "gemini",
+      "model": "gemini-3-flash-preview",
+      "is_test": true,
+      "hashes": "available_in_source_context_but_not_transcribed"
+    },
+    {
+      "campaign_id": "VYELIySaDwDUU2wub5gW",
+      "request_id": "VYELIySaDwDUU2wub5gW_9aa83e3928754ee8a374d81c6a74bf93",
+      "ingested_at": "2026-08-27T18:41:42Z",
+      "agent": "DialogAgent",
+      "provider": "gemini",
+      "model": "gemini-3-flash-preview",
+      "is_test": true,
+      "hashes": "available_in_source_context_but_not_transcribed"
+    },
+    {
+      "campaign_id": "otDtlfnF8VZAS5tx4MCW",
+      "request_id": "otDtlfnF8VZAS5tx4MCW_1c50ff12a7334002ae540e4921d1858c",
+      "ingested_at": "2026-08-27T22:03:46.413Z",
+      "agent": "StoryModeAgent",
+      "provider": "gemini_sdk",
+      "model": "gemini-3-flash-preview",
+      "hashes": {
+        "request_json_sha256": "0fb85759137bfded83a9e2198354541535c50127de575b8cd023672c6c391565",
+        "response_text_sha256": "7ee161cd694e923e3be9ee0019da707656eee6773effc8a66e0e8bb75923e6d3",
+        "response_parts_json_sha256": "4df2e8c8530482b4c09dc4d9923b462fe2b13a9d0b0e00debfa49e912b62a92c"
+      }
+    },
+    {
+      "campaign_id": "otDtlfnF8VZAS5tx4MCW",
+      "request_id": "otDtlfnF8VZAS5tx4MCW_db4879e0493447ee9850715a001af396",
+      "ingested_at": "2026-08-27T22:04:20.102Z",
+      "agent": "LevelUpAgent",
+      "provider": "gemini_sdk",
+      "model": "gemini-3-flash-preview",
+      "hashes": {
+        "request_json_sha256": "268e1b38509fb16a2b90b40a7d93bad7f1528faa262a67562c9a22f6f68a5ca2",
+        "response_text_sha256": "ad56db8e53a20e1db260258a9c5ccdb26216ab2aa5e88b92f7e09c150c85edbb",
+        "response_parts_json_sha256": "ec9967c75c9ecf9ef5dc835ab9d8d187f26819ea02e0fa4665479bd6a845a65a"
+      }
+    },
+    {
+      "campaign_id": "otDtlfnF8VZAS5tx4MCW",
+      "request_id": "otDtlfnF8VZAS5tx4MCW_55e381125fa540689712725ba2de534d",
+      "ingested_at": "2026-08-27T22:04:48.047Z",
+      "agent": "LevelUpAgent",
+      "provider": "gemini_sdk",
+      "model": "gemini-3-flash-preview",
+      "hashes": {
+        "request_json_sha256": "f6ee556a96fcff7282a47099401bb0c834e6a78c0daaf94fd281f49cdefe5f23",
+        "response_text_sha256": "f5f7b74bf6456f707076bdb5f1effc43a9d4497d3e14588cad4cc479c187de7e",
+        "response_parts_json_sha256": "0627bfc51364625926eac377f1b92b7459e7e15c4935f54479356987ff4c26a9"
+      }
+    }
+  ],
+  "privacy": {
+    "raw_prompt_included": false,
+    "raw_response_included": false,
+    "note": "The two VYEL rows intentionally remain separate because the same request ID occurred at two ingestion times with different hashes."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "run_id": "pr9451-backend-4964052",
+  "product_repository": "jleechanorg/worldarchitect.ai",
+  "pull_request": 9451,
+  "product_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
+  "branch": "fix/level-up-pcd-backend-main",
+  "merge_base": "16e229ced580b5eca6e50f39825bcb423b9787c1",
+  "execution": {
+    "mode": "deterministic_backend_first",
+    "native_gemini": false,
+    "real_firestore": false,
+    "browser": false,
+    "exit_code": 0,
+    "aggregate_result": "274 tests passed across six partitions; 11 subtests passed",
+    "pre_test_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
+    "post_test_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
+    "worktree_clean": true
+  },
+  "test_command": "bash pr9451_backend_evidence.sh",
+  "suites": [
+    {
+      "milestone": "M1",
+      "name": "model boundary and structured contract",
+      "result": "62 passed"
+    },
+    {
+      "milestone": "M2",
+      "name": "deterministic auto-apply, reward atomicity, and organic resume",
+      "result": "9 passed; 104 passed plus 11 subtests; 96 passed"
+    },
+    {
+      "milestone": "M3",
+      "name": "exact-head provenance and local-server handshake",
+      "artifacts": ["pr9451_backend_evidence.cast", "pr9451_backend_evidence.sh"],
+      "result": "3 passed; /health.git_commit matched product_sha",
+      "status": "passed"
+    }
+  ]
+}

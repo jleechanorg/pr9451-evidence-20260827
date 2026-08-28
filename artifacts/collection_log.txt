@@ -1,0 +1,22 @@
+Evidence collection log
+=======================
+
+Run ID: pr9451-backend-4964052
+Product SHA: 49640522938f0a9c9edb97d95fd572bdee8184ef
+
+1. Read-only GitHub metadata resolved PR #9451 head, base SHA, branch, and
+   commit count. The base SHA is 16e229ced580b5eca6e50f39825bcb423b9787c1;
+   the head is 29 commits ahead.
+2. Read-only local Git inspection calculated 119 files changed, 8242
+   insertions(+), and 10521 deletions(-) between those SHAs.
+3. The checked-in `pr9451_backend_evidence.sh` was executed from the product
+   checkout. It recorded the SHA, branch, merge-base, PR head, focused diff,
+   and deterministic test partitions in `pr9451_backend_evidence.cast`.
+4. Six partitions exited 0: M1 62 passed; M2A 9 passed; M2B 104 passed plus
+   11 subtests; M2C 96 passed; M3A 3 passed; M3B exact-SHA `/health` match.
+5. The runner verified identical pre/post SHA and an empty Git status.
+6. BQ provenance was exported as safe metadata only for the bounded
+   `gameplay_streaming` rows listed in `bq_provenance/result.json`; raw prompt
+   and response prose was not copied.
+7. Native Gemini, Firestore, and browser evidence was not asserted. M3B used
+   the already-running canonical local server and verified its exact SHA.
