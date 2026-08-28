@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "run_id": "pr9451-backend-4964052",
+  "run_id": "pr9451_backend-003-20260828T030302Z",
   "product_repository": "jleechanorg/worldarchitect.ai",
   "pull_request": 9451,
   "product_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
@@ -17,6 +17,50 @@
     "post_test_sha": "49640522938f0a9c9edb97d95fd572bdee8184ef",
     "worktree_clean": true
   },
+  "scenarios": [
+    {
+      "name": "M1 model boundary and structured ingress",
+      "campaign_id": "not_applicable_deterministic_fixture",
+      "passed": true,
+      "errors": [],
+      "checks": {"pytest_tests_passed": 62}
+    },
+    {
+      "name": "M2A BQ-derived golden CC to L4 with choice amendment",
+      "campaign_id": "bq_derived_fixture_no_live_campaign",
+      "passed": true,
+      "errors": [],
+      "checks": {"pytest_tests_passed": 9}
+    },
+    {
+      "name": "M2B reward provenance and atomic persistence",
+      "campaign_id": "not_applicable_deterministic_fixture",
+      "passed": true,
+      "errors": [],
+      "checks": {"pytest_tests_passed": 104, "subtests_passed": 11}
+    },
+    {
+      "name": "M2C organic harness resume contract",
+      "campaign_id": "not_applicable_deterministic_fixture",
+      "passed": true,
+      "errors": [],
+      "checks": {"pytest_tests_passed": 96}
+    },
+    {
+      "name": "M3A server SHA handshake contract",
+      "campaign_id": "not_applicable_server_contract",
+      "passed": true,
+      "errors": [],
+      "checks": {"pytest_tests_passed": 3}
+    },
+    {
+      "name": "M3B exact-head local-server health response",
+      "campaign_id": "not_applicable_health_endpoint",
+      "passed": true,
+      "errors": [],
+      "checks": {"health_git_commit_matches": true, "server_port": 8049}
+    }
+  ],
   "test_command": "bash pr9451_backend_evidence.sh",
   "suites": [
     {

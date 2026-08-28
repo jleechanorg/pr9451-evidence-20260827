@@ -1,7 +1,7 @@
 Evidence collection log
 =======================
 
-Run ID: pr9451-backend-4964052
+Run ID: pr9451_backend-003-20260828T030302Z
 Product SHA: 49640522938f0a9c9edb97d95fd572bdee8184ef
 
 1. Read-only GitHub metadata resolved PR #9451 head, base SHA, branch, and
@@ -10,7 +10,8 @@ Product SHA: 49640522938f0a9c9edb97d95fd572bdee8184ef
 2. Read-only local Git inspection calculated 119 files changed, 8242
    insertions(+), and 10521 deletions(-) between those SHAs.
 3. The checked-in `pr9451_backend_evidence.sh` was executed from the product
-   checkout. It recorded the SHA, branch, merge-base, PR head, focused diff,
+   checkout. It recorded the SHA, branch, merge-base, PR head, full PR commit
+   log and diff,
    and deterministic test partitions in `pr9451_backend_evidence.cast`.
 4. Six partitions exited 0: M1 62 passed; M2A 9 passed; M2B 104 passed plus
    11 subtests; M2C 96 passed; M3A 3 passed; M3B exact-SHA `/health` match.
@@ -20,3 +21,7 @@ Product SHA: 49640522938f0a9c9edb97d95fd572bdee8184ef
    and response prose was not copied.
 7. Native Gemini, Firestore, and browser evidence was not asserted. M3B used
    the already-running canonical local server and verified its exact SHA.
+8. The server process was PID 26500 on port 8049 with command
+   `/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -m mvp_site.main serve`.
+9. `artifacts/terminal_transcript.txt` is mechanically extracted from the raw
+   cast and retains actual command output rather than a rewritten summary.

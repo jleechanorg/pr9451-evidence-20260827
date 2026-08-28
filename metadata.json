@@ -1,18 +1,23 @@
 {
-  "bundle_version": "1.1",
-  "bundle_timestamp": "2026-08-28T02:48:42Z",
-  "run_id": "pr9451-backend-4964052",
-  "iteration": 2,
-  "timestamp_utc": "2026-08-28T02:48:42Z",
+  "bundle_version": "1.1.0",
+  "bundle_timestamp": "2026-08-28T03:03:02Z",
+  "run_id": "pr9451_backend-003-20260828T030302Z",
+  "iteration": 3,
+  "timestamp_utc": "2026-08-28T03:03:02Z",
   "checksum_mode": "bundle",
   "provenance": {
     "repository": "jleechanorg/worldarchitect.ai",
     "pull_request": 9451,
     "git_head": "49640522938f0a9c9edb97d95fd572bdee8184ef",
-    "branch": "fix/level-up-pcd-backend-main",
+    "git_branch": "fix/level-up-pcd-backend-main",
     "merge_base": "16e229ced580b5eca6e50f39825bcb423b9787c1",
     "commits_ahead_of_main": 29,
-    "diff_stat_vs_main": "119 files changed, 8242 insertions(+), 10521 deletions(-)"
+    "diff_stat_vs_main": "119 files changed, 8242 insertions(+), 10521 deletions(-)",
+    "server": {
+      "pid": 26500,
+      "port": 8049,
+      "process_cmdline": "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -m mvp_site.main serve"
+    }
   },
   "claims": [
     {

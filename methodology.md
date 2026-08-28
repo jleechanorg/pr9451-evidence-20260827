@@ -9,8 +9,8 @@ real Firestore, and browser claims are explicitly out of scope.
 
 ## Collection
 
-The runner records repository provenance, the reviewed diff, PR identity, and a
-six focused test/health partitions. It verifies that the SHA before and after
+The runner records repository provenance, the full PR commit log and diff, PR
+identity, and six focused test/health partitions. It verifies that the SHA before and after
 execution is identical and that `git status --porcelain` is empty. The
 terminal stream is retained as an asciinema cast and rendered media.
 
@@ -25,12 +25,14 @@ behavior only when the response satisfies the agreed contract.
 
 ## BQ provenance and privacy
 
-`bq_provenance/query.sql` records the bounded parameterized lookup used by the
-organic test. `bq_provenance/result.json` records only campaign/request IDs,
-timestamps, agent/provider/model labels, event type, and SHA-256 values. Raw
-prompt and response text is not copied into this public bundle. The result
-preserves both rows for the duplicated VYEL request ID rather than silently
-choosing one.
+`bq_provenance/query.sql` records the bounded parameterized lookup associated
+with the checked-in golden fixtures. `bq_provenance/result.json` records only
+campaign/request IDs, timestamps, agent/provider/model labels, event type, and
+SHA-256 values. Raw prompt and response text is not copied into this public
+bundle. Therefore this artifact proves row identity and provider attribution,
+not byte equivalence between private BQ content and the checked-in fixtures.
+The result preserves both rows for the duplicated VYEL request ID rather than
+silently choosing one.
 
 ## Limitations
 

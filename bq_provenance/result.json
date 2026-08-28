@@ -17,30 +17,42 @@
       "request_id": "2u8ehCZ1COsbAua3MZdo_3fcc4b0e7e7d4cd493c0b1849ac563c0",
       "ingested_at": "2026-08-03T05:37:11Z",
       "agent": "LevelUpAgent",
-      "provider": "gemini",
+      "provider": "agy",
       "model": "gemini-3-flash-preview",
       "is_test": false,
-      "hashes": "available_in_source_context_but_not_transcribed"
+      "hashes": {
+        "request_json_sha256": "5ce428ccca9fe3bd498bb6d6d744e1392b04216b1de76e5a10ea1c04e71245ca",
+        "response_text_sha256": "add0c4c0259ca74cb73ad23a7c3d772b3769bbd490d8334236098caedb3cd3a2",
+        "response_parts_json_sha256": "b7b11b4dc712de9156fc91014846bbf88111d9a202d192935fc8acb2a1795605"
+      }
     },
     {
       "campaign_id": "VYELIySaDwDUU2wub5gW",
       "request_id": "VYELIySaDwDUU2wub5gW_9aa83e3928754ee8a374d81c6a74bf93",
       "ingested_at": "2026-08-27T18:41:09Z",
       "agent": "DialogAgent",
-      "provider": "gemini",
+      "provider": "agy",
       "model": "gemini-3-flash-preview",
       "is_test": true,
-      "hashes": "available_in_source_context_but_not_transcribed"
+      "hashes": {
+        "request_json_sha256": "a7a724cfd940ce1afe115043294fcb4f2c76c1abb61a78539ee047074689c0b6",
+        "response_text_sha256": "1fa1b4682145730b7199d8aa99457f87c03f63c39a5f25da9cd53c8cb360b9ec",
+        "response_parts_json_sha256": "8b264e66682603c6fd3d420067c4ec343287e100b00d53a342238df0381927b1"
+      }
     },
     {
       "campaign_id": "VYELIySaDwDUU2wub5gW",
       "request_id": "VYELIySaDwDUU2wub5gW_9aa83e3928754ee8a374d81c6a74bf93",
       "ingested_at": "2026-08-27T18:41:42Z",
       "agent": "DialogAgent",
-      "provider": "gemini",
+      "provider": "agy",
       "model": "gemini-3-flash-preview",
       "is_test": true,
-      "hashes": "available_in_source_context_but_not_transcribed"
+      "hashes": {
+        "request_json_sha256": "7b15bf2866d9897572f83fb13ed09755b518d19b18ce20ff9be08b09be7fe5bb",
+        "response_text_sha256": "731b93d25de20d3c2322536bfa1720542bf151421780326bd51b2c2462c3dc44",
+        "response_parts_json_sha256": "744dc0ab12211b64deefd50f035a80ada6adb0a2642e0ee600d34f2a5d0028bc"
+      }
     },
     {
       "campaign_id": "otDtlfnF8VZAS5tx4MCW",

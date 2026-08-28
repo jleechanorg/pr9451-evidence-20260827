@@ -16,7 +16,8 @@ stale-replay, atomic-persistence, auto-apply end-to-end, and organic-resume
 suites using the repository's realistic external-boundary fixtures. Results
 are M1 `62 passed`, M2A `9 passed`, M2B `104 passed, 11 subtests`, and M2C
 `96 passed`: 271 tests plus 11 subtests. The corresponding source fixtures and
-safe BQ provenance hashes are described in `bq_provenance/`.
+associated BQ row identities and hashes are described in `bq_provenance/`;
+this public bundle does not claim raw-byte equivalence to private BQ prose.
 
 ## M2 - level-up lifecycle and resume behavior
 
@@ -44,3 +45,20 @@ Run `shasum -a 256 -c checksums.sha256` after obtaining the published bundle.
 `artifacts/collection_log.txt` records how the bundle was collected. The BQ
 artifact contains metadata and SHA-256 values only; private prompt and response
 prose is intentionally absent.
+
+## Claim to artifact map
+
+| Claim | File | Key fields or section |
+|---|---|---|
+| Model boundary and structured ingress pass | `run.json` | `scenarios[0]` |
+| Golden CC-to-L4 and choice amendment pass | `run.json` | `scenarios[1]` |
+| Reward atomicity and resume partitions pass | `run.json` | `scenarios[2:4]` |
+| Exact-head server handshake passes | `pr9451_backend_evidence.cast` | `M3A`, `M3B`, final SHA check |
+| Raw commands, full diff, tests, and process linkage | `artifacts/terminal_transcript.txt` | `GATE 0A-C`, `M1-M3B` |
+| Associated BQ row identity/provider metadata | `bq_provenance/result.json` | `rows[].hashes` |
+
+## Evidence integrity
+
+All six scenarios passed with empty `errors` arrays. The bundle uses one root
+`checksums.sha256` layer. No live campaign IDs exist for deterministic fixtures;
+their `campaign_id` values explicitly record that limitation.

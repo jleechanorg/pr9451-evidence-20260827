@@ -1,8 +1,11 @@
 # PR #9451 backend-first evidence
 
 Exact reviewed SHA: `49640522938f0a9c9edb97d95fd572bdee8184ef`.
+Branch: `fix/level-up-pcd-backend-main`. Collected at:
+`2026-08-28T03:03:02Z`.
 
-Caption: the terminal recording shows git/PR provenance, representative code
+Caption: the terminal recording shows git/PR provenance, the full PR commit
+log and diff,
 diffs, and a live deterministic backend run proving reward provenance,
 atomic PCD/session persistence, BQ-derived realistic fake-LLM CC-to-L4, and
 organic resume behavior. The recording bookends the run with the same SHA and
